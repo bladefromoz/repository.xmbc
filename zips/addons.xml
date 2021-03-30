@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.iptvauplus"
+version="1.0.0"
+name="IPTV AU+"
+provider-name="bladefromoz">
+<requires>
+  <import addon="xbmc.python" version="2.25.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">IPTV AU+</summary>
+  <description lang="en_GB">Australian IPTV Channels</description>
+  <disclaimer lang="en_GB">All content is owned by networks who provide it.</disclaimer>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot>resources\screenshot-01.jpg</screenshot>
+    <screenshot>resources\screenshot-02.jpg</screenshot>
+    <screenshot>resources\screenshot-03.jpg</screenshot>
+  </assets>
+  <news>Updated with latest artwork metadata</news>
+</extension>
+</addon>
+
+<addon id="repository.xmbc" name="BladeFromOz Repository" version="1.0" provider-name="bladefromoz">
+    <extension point="xbmc.addon.repository" name="BladeFromOz Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/bladefromoz/repository.xmbc/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/bladefromoz/repository.xmbc/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/bladefromoz/repository.xmbc/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>BladeFromOz Repository</summary>
+        <description>Content created by bladefromoz</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+</addons>
